@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-search"
+version = "0.1.0"
+description = "Free DuckDuckGo web search + content extraction — no API key required"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Chenney Zhuang"}]
+keywords = ["web-search", "duckduckgo", "content-extraction", "scraper"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+]
+
+[project.scripts]
+websearch = "websearch.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
