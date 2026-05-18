@@ -1,6 +1,39 @@
+# Byte-compiled
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+
+# Packaging
 *.egg-info/
+*.egg
 dist/
 build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
 .env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
