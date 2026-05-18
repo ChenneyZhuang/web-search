@@ -3,6 +3,7 @@
 import urllib.request
 import urllib.parse
 import re
+from html import unescape as _unescape
 import hashlib
 from pathlib import Path
 
@@ -24,7 +25,7 @@ def search(query: str, limit: int = 10) -> list[dict]:
         r'class="result__a"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
         html, re.DOTALL,
     )[:limit]:
-        title = re.sub(r"<[^>]+>", "", t).strip()
+        title = _unescape(re.sub(r"<[^>]+>", "", t).strip())
         clean_url = _clean_url(u)
         results.append({"title": title, "url": clean_url})
     return results
