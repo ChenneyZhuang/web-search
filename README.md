@@ -50,10 +50,12 @@ You can also combine both in a single call: search for something, then automatic
 | **Zero Dependencies** | Uses only Python's standard library — no `pip install` cascade of 50 packages. |
 | **No API Key** | Scrapes DuckDuckGo's public HTML interface. Free forever. |
 | **Content Extraction** | Strips HTML to readable plain text. Skips scripts, styles, nav/footer/header/aside elements. |
+| **HTML Entity Decoding** | Titles come out clean — `&#x27;` becomes `'`, `&amp;` becomes `&`, etc. |
 | **Smart Caching** | MD5-based file cache in `~/.cache/websearch/`. Extract the same URL twice and the second call is instant. |
 | **Clean URLs** | DuckDuckGo wraps results in redirect links (`uddg=...&rut=...`). This library decodes them back to the real destination URL automatically. |
 | **CLI + Python + Hermes** | Three ways to use it, all from the same install. |
-| **Lightweight** | The entire source is ~85 lines of Python. Easy to read, audit, and hack on. |
+| **PEP 561 Typed** | Ships `py.typed` marker — compatible with mypy, pylance, and IDE autocompletion. |
+| **Lightweight** | The entire source is ~90 lines of Python. Easy to read, audit, and hack on. |
 
 ---
 
