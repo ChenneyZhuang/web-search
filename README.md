@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](#features)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macos-lightgrey.svg)](#installation)
+[![CI](https://github.com/ChenneyZhuang/web-search/actions/workflows/ci.yml/badge.svg)](https://github.com/ChenneyZhuang/web-search/actions/workflows/ci.yml)
 
 **Free DuckDuckGo web search + content extraction — no API key required.**
 
