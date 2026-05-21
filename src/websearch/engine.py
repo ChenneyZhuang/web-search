@@ -10,7 +10,7 @@ from pathlib import Path
 CACHE_DIR = Path.home() / ".cache" / "websearch"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
-UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
 
 
 def search(query: str, limit: int = 10) -> list[dict]:
